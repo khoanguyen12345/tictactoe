@@ -41,7 +41,7 @@ postData = async()=>{
   let data = new URLSearchParams();
     data.append("player", this.state.account.name);
     data.append("score", this.state.timePassed);
-    const url = "`http://ftw-highscores.herokuapp.com/tictactoe-dev;`"
+    const url = "`https://ftw-highscores.herokuapp.com/tictactoe-dev;`"
     let response = await fetch(url, {
       method: "POST",
       headers: {
