@@ -1,0 +1,23 @@
+.square{
+  width: 200px;
+  height: 200px;
+  border: 3px solid pink;
+  font-size:30pt;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  margin:auto;
+  padding: 400px;
+}
