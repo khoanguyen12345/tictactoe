@@ -50,7 +50,7 @@ postData = async()=>{
       body: data.toString(),
       json: true,
     });
-
+    console.log(response)
 }
 
 getData = async() =>{
@@ -76,8 +76,10 @@ otherPeopleArray = (array)=>{
   
   let mapArray = array.items.sort(this.compare_item)
   mapArray.map(item=>{
-    resultArray.push(<li>{item.player}: {item.score}</li>)
-  })
+   resultArray.push(<li>{item.player}: {item.score}</li>)
+   return null;
+  }
+  )
   return resultArray;
 }
 
